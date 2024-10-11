@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Webpage Design</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <header class="navbar" id="nav-bar">
+         <div class="icon">
+            <h2 class="logo">D & D</h2>
+         </div>
+         <div class="menu">
+            <ul>
+               <li onclick="navClose()"><a href="#">Home</a></li>
+               <li onclick="navClose()"><a href="#">About</a></li>
+               <li onclick="navClose()"><a href="#services">Services</a></li>
+               <li onclick="navClose()"><a href="#">Designs</a></li>
+               <li onclick="navClose()"><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+         <div class="burger-menu" onclick="navOpen()">
+            <div></div>
+            <div></div>
+            <div></div>
+         </div>
+      </header>
+      <main class="hero-section">
+         <section class="hero-left">
+            <div class="left-cnt">
+               <div class="left-cnt-hding">
+                  <h2>
+                     <span> Web </span> Design <span>&</span><br />
+                     Web <span>Development</span>
+                  </h2>
+               </div>
+               <div class="left-cnt-para">
+                  <p>
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat beatae qui placeat molestiae eos!
+                     Incidunt nobis numquam eum nesciunt quos pariatur minus alias voluptatum. Ut provident quibusdam
+                     nisi officia soluta.
+                  </p>
+               </div>
+               <div class="left-cnt-btn">
+                  <button class="login">Join now</button>
+               </div>
+            </div>
+         </section>
+         <section class="hero-right">
+            <div class="hero-right-img">
+               <img src="images/hero-img.jpg" alt="" />
+            </div>
+         </section>
+      </main>
+      <section class="card-section" id="services">
+         <h2 class="section-title">Our Services</h2>
+         <div class="card-container">
+            <div class="card">
+               <img src="images/mongodb-logo.jpg" alt="" />
+               <h4>MONGODB</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus ut quibusdam a voluptates
+                  incidunt
+               </p>
+            </div>
+            <div class="card">
+               <img src="images/express-logo.png" alt="" />
+               <h4>EXPRESS JS</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus ut quibusdam a voluptates
+                  incidunt
+               </p>
+            </div>
+            <div class="card">
+               <img src="images/angular-logo.png" alt="" />
+               <h4>ANGULAR</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus ut quibusdam a voluptates
+                  incidunt
+               </p>
+            </div>
+            <div class="card">
+               <img src="images/react-logo.jpg" alt="" />
+               <h4>REACT</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus ut quibusdam a voluptates
+                  incidunt
+               </p>
+            </div>
+            <div class="card">
+               <img src="images/node-logo.jpg" alt="" />
+               <h4>NODE JS</h4>
+               <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus ut quibusdam a voluptates
+                  incidunt
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="contact-section" id="contact">
+         <h2 class="section-title">Contact Us</h2>
+         <div class="contact-container">
+            <form>
+               <div class="form-details">
+                  <label for="">Name</label>
+                  <div class="input-div">
+                     <input class="form-input" type="text" />
+                  </div>
+               </div>
+               <div class="form-details">
+                  <label for="">Email</label>
+                  <div class="input-div">
+                     <input class="form-input" type="email" />
+                  </div>
+               </div>
+               <div class="form-details">
+                  <label for="">Message</label>
+                  <div class="input-div">
+                     <textarea class="form-input" name="" id=""></textarea>
+                  </div>
+               </div>
+               <button class="submit-btn">Submit</button>
+            </form>
+         </div>
+      </section>
+      <footer id="footer">
+         <h4>This page provides Web Designing & Web Development Ideas and Services</h4>
+      </footer>
+
+      <script>
+         const navBar = document.getElementById("nav-bar");
+         window.onscroll = function () {
+            if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+               navBar.classList.add("nav-colored");
+            } else {
+               navBar.classList.remove("nav-colored");
+            }
+         };
+
+         let navMenu=document.querySelector('.menu')
+         const navOpen=()=>{
+            navMenu.classList.toggle('nav-menu-active')
+         }
+         const navClose=()=>{
+            navMenu.classList.remove('nav-menu-active')
+         }
+      </script>
+   </body>
+</html>

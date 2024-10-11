@@ -1,0 +1,1 @@
+# creating a staic page using HTML, CSS and some JS
