@@ -1,1 +1,1 @@
-# creating a staic page using HTML, CSS and some JS
+# a static page using HTML, CSS and some JS
