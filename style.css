@@ -69,6 +69,20 @@ html {
    height: 3px;
    background-color: white;
 }
+.nav-close-btn{
+   position: absolute;
+   top: 12px;
+   left: 12px;
+   color: white;
+   background: transparent;
+   border: 0;
+   border-radius: 50%;
+   /* font-weight: bold; */
+   font-size: 1.1rem;
+   padding: 12px;
+   display: none;
+}
+
 .hero-section {
    display: flex;
    justify-content: space-between;
@@ -147,6 +161,7 @@ html {
    width: 100%;
    padding: 40px 120px;
    color: black;
+   background-color: white;
    text-align: center;
 }
 .card-container {
@@ -160,7 +175,7 @@ html {
    flex-direction: column;
    align-items: center;
    gap: 12px;
-   width: 240px;
+   width: 220px;
    height: 360px;
    box-shadow: 2px 2px 8px black;
    border-radius: 6px;
@@ -289,7 +304,7 @@ html {
 }
 @media screen and (max-width: 800px) {
    .navbar {
-      padding: 0 60px;
+      padding: 12px 60px;
    }
    .navbar .menu {
       display: none;
@@ -314,6 +329,9 @@ html {
    }
    .navbar .burger-menu {
       display: flex;
+   }
+   .navbar .nav-close-btn{
+      display: block;
    }
    .hero-section {
       padding: 0 60px;
@@ -344,14 +362,29 @@ html {
    .contact-container .form-details .input-div {
       width: 100%;
    }
+   ::-webkit-scrollbar{
+      display: none;
+   }
 }
 
 @media screen and (max-width: 600px) {
+   .navbar {
+      padding: 12px 30px;
+   }
    .navbar .icon {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
    }
    .navbar .menu{
       width: 90%;
+   }
+   .burger-menu div {
+      width: 24px;
+      height: 2px;
+      background-color: white;
+   }
+   .hero-section {
+      padding: 0 30px;
+      padding-top: 160px;
    }
    .left-cnt-hding h2 {
       font-size: 1.5rem;
@@ -364,8 +397,17 @@ html {
       width: 88px;
       height: 28px;
    }
+   .card-section {
+      padding: 20px 30px;
+   }
+   .contact-section {
+      padding: 20px 30px;
+   }
    .contact-container form {
       padding: 1.8rem;
+   }
+   .section-title{
+      font-size: 1.3rem;
    }
    #footer{
       font-size: 0.9rem;
