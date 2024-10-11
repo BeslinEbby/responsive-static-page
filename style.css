@@ -185,7 +185,7 @@ html {
    height: 40%;
    object-fit: contain;
 }
-.know-more-btn{
+.card .know-more-btn{
    border: 0;
    padding: 6px 12px;
    border-radius: 6px;
